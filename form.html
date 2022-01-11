@@ -1,0 +1,187 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        .container{
+            background-color: #786fb2;
+        }
+
+        .container{
+            border: 0.5rem outset #34b3ff;
+        }
+
+        .check2 label,
+        b {
+            margin-left: 30px;
+        }
+
+        .check2 input {
+            width: 250px;
+
+        }
+
+        .check2 label {
+            font-weight: bold;
+        }
+
+        .check2 label,
+        input {
+            margin-left: 30px;
+        }
+
+        .check input{
+            cursor: pointer;
+        }
+
+        label {
+            margin-right: 40px;
+        }
+
+        .box {
+            margin: 40px 23;
+            border: 1px solid grey;
+            background-color: white;
+            width: 600px;
+            cursor: not-allowed;
+
+        }
+
+        .box p {
+            margin-top: -15px;
+        }
+
+        .box p,
+        h2 {
+            margin-left: 10px;
+        }
+
+        #Comments {
+            height: 90px;
+            width: 300px;
+            display: block;
+        }
+
+        .box1 label {
+            margin-left: 23px;
+            font-weight: bold;
+        }
+
+        .box1 textarea {
+            margin-left: 23px;
+        }
+
+        #submit {
+            width: 100px;
+            height: 32px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 12px;
+            font-family: Georgia, serif;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 865px) and (min-width: 300px) {
+            .container {
+                background-color: lightgreen;
+            }
+
+            .check2 input {
+                margin-top: 4px;
+                width: auto;
+            }
+
+            .box {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Contact Us</h2>
+            <p>If you have any questions please fill out this contact form. Thank you!</p>
+        </div>
+        <form action="#">
+            <div class="check2">
+                <label for="fname">Full name</label>
+                <br>
+                <br>
+                <input type="text" name="fname" id="Fname" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <br>
+                <br>
+                <label for="addrs">Address</label>
+                <br>
+                <br>
+                <input type="text" id="addrs" placeholder="Street Address">
+                <br>
+                <br>
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="State">
+                <input type="number" placeholder="ZIP Code" class="zip">
+                <br>
+                <br>
+                <label for="#">Contact Information</label>
+                <br>
+                <br>
+                <input type="email" placeholder="Email*">
+                <input type="number" placeholder="Phone">
+                <br>
+            </div>
+            <div class="check">
+                <br>
+                <label for="fname"><b>Select Your Interest</b></label>
+                <br>
+                <br>
+                <input type="checkbox">
+                <label for="#">Interior and Exterior painting</label>
+                <input type="checkbox">
+                <label for="">Bar joist ceiling painting</label>
+                <br>
+                <br>
+                <input type="checkbox">
+                <label for="#">Interior and Exterior painting</label>
+                <input type="checkbox">
+                <label for="">Bar joist ceiling painting</label>
+                <br>
+                <br>
+                <input type="checkbox">
+                <label for="#">Interior and Exterior painting</label>
+                <input type="checkbox">
+                <label for="">Bar joist ceiling painting</label>
+                <br>
+                <br>
+                <input type="checkbox">
+                <label for="#">Interior and Exterior painting</label>
+                <input type="checkbox">
+                <label for="">Bar joist ceiling painting</label>
+                <br>
+                <br>
+                <div class="box1">
+                    <label for="Comments">Questions / Comments</label>
+                    <br>
+                    <br>
+                    <textarea name="Comments" id="Comments" cols="20" rows="4" placeholder="Message*"></textarea>
+                </div>
+                <br>
+                <br>
+                <input type="checkbox" name="tick" id="tick" required>
+                <label for="tick">Upadate me on and special offers via email</label>
+                <br>
+                <br>
+                <input type="reset" value="Reset" id="submit"  >
+                <input type="submit" value="Submit" id="submit">
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
